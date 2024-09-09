@@ -1,0 +1,84 @@
+
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background:  #F05A7E;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+  border-radius: 8px;
+}
+
+.text {
+  padding: 1em;
+  
+}
+
+.muted {
+  opacity: 0.77;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.space {
+  height: 100px;
+}
+.birthstone{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #1E2A5E;
+}
+.name{
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #EF5A6F ;
+}
